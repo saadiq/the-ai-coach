@@ -3,20 +3,19 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, TrendingUp, Brain, Users, Rocket, Clock3 } from 'lucide-react';
+import { ShieldCheck, TrendingUp, Brain, Users, Rocket, Clock3, ArrowRight } from 'lucide-react';
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       {/* Hero Section */}
-      <header className="py-24 px-4 text-center">
+      <header className="py-32 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-slate-900 mb-6">
+          <h1 className="text-6xl font-bold text-slate-900 mb-8">
             Don&apos;t Let AI Leave You Behind
           </h1>
-          <p className="text-xl text-slate-600 mb-8">
-            Transform your career with 1:1 expert coaching sessions designed to unlock your AI potential. 
-            Get personalized guidance, practical strategies, and hands-on experience to excel in the AI era.
+          <p className="text-2xl text-slate-800 mb-12 leading-relaxed">
+            Future-Proof Your Career: Master AI and Stay Ahead of the Curve
           </p>
           <Button 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-lg"
@@ -26,6 +25,45 @@ const LandingPage = () => {
           </Button>
         </div>
       </header>
+
+      {/* Value Proposition Section */}
+      <section className="py-20 px-4 bg-slate-900 text-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-8">
+          Partner with an AI expert who understands your professional demands.
+          </h2>
+
+          <p className="text-xl font-medium mb-6">By working together, you'll gain:</p>
+          
+          <ul className="space-y-4 text-lg mb-10">
+            <li className="flex items-start">
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-blue-400" />
+              <span>Strategic confidence with AI tools, eliminating costly trial and error</span>
+            </li>
+            <li className="flex items-start">
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-blue-400" />
+              <span>Custom workflows that fit your industry and style</span>
+            </li>
+            <li className="flex items-start">
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-blue-400" />
+              <span>A trusted advisor who keeps you ahead of AI developments</span>
+            </li>
+          </ul>
+
+          <p className="text-xl leading-relaxed font-medium mb-10">
+          Don't just adapt to the future - get ahead of it.
+          </p>
+
+          <div className="text-center">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-lg"
+              onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+            >
+              Book Your Free Intro Session
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Stats Section */}
       <section className="py-16 px-4 bg-blue-600 text-white">
