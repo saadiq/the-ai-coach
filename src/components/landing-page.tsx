@@ -19,7 +19,7 @@ const LandingPage = () => {
           </p>
           <Button 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-lg"
-            onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+            onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
           >
             Book Your Free Intro Session
           </Button>
@@ -57,7 +57,7 @@ const LandingPage = () => {
           <div className="text-center">
             <Button 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-lg"
-              onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+              onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
             >
               Book Your Free Intro Session
             </Button>
@@ -214,7 +214,7 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 mt-6"
-                onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
                 Book Your Free Intro Session
               </Button>
@@ -234,7 +234,7 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 mt-6"
-                onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
                 Book Your Free Intro Session
               </Button>
@@ -254,7 +254,7 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-blue-600 hover:bg-blue-700 mt-6"
-                onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
                 Book Your Free Intro Session
               </Button>
@@ -289,7 +289,7 @@ const LandingPage = () => {
           </p>
           <Button 
             className="bg-slate-900 text-white hover:bg-slate-800 px-8 py-6 text-lg rounded-lg"
-            onClick={() => window.open('https://cal.com/saadiq/free-20-min-ai-consultation', '_blank')}
+            onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
           >
             Book Your Free Intro Session
           </Button>
