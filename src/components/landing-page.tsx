@@ -15,6 +15,7 @@ const LandingPage = () => {
           
           <div className="flex items-center space-x-6">
             <a href="https://saadiq.xyz" className="uppercase text-sm font-medium text-slate-700 hover:text-slate-900">Home</a>
+            <a href="https://saadiq.xyz/about/" className="uppercase text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
             <a href="#" className="uppercase text-sm font-medium text-pink-500 hover:text-pink-600">AI Coach</a>
           </div>
         </div>
