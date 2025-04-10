@@ -206,14 +206,14 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">Free Intro Session</h3>
+                <h3 className="text-xl font-semibold">Hourly Coaching</h3>
                 <p className="text-slate-600 mb-4">
-                  Free 20-minute consultation to explore how AI can enhance your specific role and career path.
+                  Flexible, one-on-one sessions tailored to your immediate needs and questions.
                 </p>
                 <ul className="text-slate-600 space-y-2">
-                  <li>• Opportunity assessment</li>
-                  <li>• Personalized AI roadmap</li>
-                  <li>• Quick-win identification</li>
+                  <li>• Focused problem-solving</li>
+                  <li>• Quick skill development</li>
+                  <li>• Immediate guidance</li>
                 </ul>
               </CardContent>
               <Button 
@@ -226,14 +226,14 @@ const LandingPage = () => {
 
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">Skill Enhancement</h3>
+                <h3 className="text-xl font-semibold">Workshops</h3>
                 <p className="text-slate-600 mb-4">
-                  One-on-one coaching to master AI tools and techniques relevant to your work.
+                  Intensive learning experiences available in half-day, full-day, or multi-week formats.
                 </p>
                 <ul className="text-slate-600 space-y-2">
-                  <li>• Practical AI applications</li>
-                  <li>• Customized learning path</li>
-                  <li>• Real-world practice</li>
+                  <li>• Deep dive into specific topics</li>
+                  <li>• Hands-on practice</li>
+                  <li>• Team-based learning</li>
                 </ul>
               </CardContent>
               <Button 
@@ -246,14 +246,15 @@ const LandingPage = () => {
 
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">AI Leadership Track</h3>
+                <h3 className="text-xl font-semibold">Ongoing Retainer</h3>
                 <p className="text-slate-600 mb-4">
-                  Comprehensive program to become an AI-enabled leader in your field.
+                  Comprehensive support package for continuous AI growth and implementation.
                 </p>
                 <ul className="text-slate-600 space-y-2">
-                  <li>• Strategic AI implementation</li>
-                  <li>• Team enablement skills</li>
-                  <li>• Future-ready leadership</li>
+                  <li>• Regular coaching sessions</li>
+                  <li>• Initiative support</li>
+                  <li>• AI trend monitoring</li>
+                  <li>• Strategic guidance</li>
                 </ul>
               </CardContent>
               <Button 
