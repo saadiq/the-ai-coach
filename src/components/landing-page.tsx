@@ -85,7 +85,7 @@ const LandingPage = () => {
             Common Concerns About AI
           </h2>
           <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
-            Whether you're a professional or an organization leader, you're not alone in your concerns:
+            Whether you&apos;re a professional or an organization leader, you&apos;re not alone in your concerns:
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -95,7 +95,7 @@ const LandingPage = () => {
                 <h3 className="text-xl font-semibold">Job Security</h3>
                 <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Professionals</span>
                 <p className="text-slate-600">
-                  69% of professionals worry about AI replacement. Our coaching helps you become 
+                  69% of professionals worry about AI replacement. My coaching helps you become 
                   irreplaceable by mastering AI as a tool for enhancement, not replacement.
                 </p>
               </CardContent>
@@ -165,10 +165,10 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-6 border border-slate-200 shadow-sm">
               <CardContent className="space-y-4">
-                <h3 className="text-xl font-semibold text-pink-500">Creating "Aha" Moments</h3>
+                <h3 className="text-xl font-semibold text-pink-500">Creating &quot;Aha&quot; Moments</h3>
                 <p className="text-slate-600">
                   I help each team member experience that pivotal moment when they successfully use AI and witness its 
-                  capabilities firsthand, expanding their understanding of what's possible.
+                  capabilities firsthand, expanding their understanding of what&apos;s possible.
                 </p>
               </CardContent>
             </Card>
@@ -375,7 +375,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section - Updated to match blog's blue */}
+      {/* CTA Section - Updated to match blog&apos;s blue */}
       <section className="py-16 px-4 bg-pink-500 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-6">
