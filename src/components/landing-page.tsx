@@ -28,7 +28,7 @@ const LandingPage = () => {
             Don&apos;t Let AI Leave You Behind
           </h1>
           <p className="text-2xl text-slate-700 mb-12 leading-relaxed">
-            Future-Proof Your Career: Master AI and Stay Ahead of the Curve
+            Future-Proof Your Career and Company: Master AI and Stay Ahead of the Curve
           </p>
           <Button 
             className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
@@ -43,28 +43,28 @@ const LandingPage = () => {
       <section className="py-20 px-4 bg-slate-800 text-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8">
-            Partner with an AI expert who understands your professional demands.
+            Partner with an AI expert who understands your organizational challenges and opportunities.
           </h2>
 
-          <p className="text-xl font-medium mb-6">By working together, you&apos;ll gain:</p>
+          <p className="text-xl font-medium mb-6">By working together, you will gain:</p>
           
           <ul className="space-y-4 text-lg mb-10">
             <li className="flex items-start">
               <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
-              <span>Strategic confidence with AI tools, eliminating costly trial and error</span>
+              <span>A competitive edge through strategic AI implementation, eliminating costly trial and error</span>
             </li>
             <li className="flex items-start">
               <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
-              <span>Custom workflows that fit your industry and style</span>
+              <span>Custom workflows that enhance productivity across your entire organization</span>
             </li>
             <li className="flex items-start">
               <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
-              <span>A trusted advisor who keeps you ahead of AI developments</span>
+              <span>A trusted advisor who keeps your team ahead of AI developments</span>
             </li>
           </ul>
 
           <p className="text-xl leading-relaxed font-medium mb-10">
-            Don&apos;t just adapt to the future - get ahead of it.
+            Don&apos;t just adapt to the future - position your company at the forefront of innovation.
           </p>
 
           <div className="text-center">
@@ -197,6 +197,85 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* AI Bootcamps Value Proposition Section */}
+      <section className="py-16 px-4 bg-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-semibold text-center mb-6 text-slate-900">
+            The Value of My Company Workshops
+          </h2>
+          <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
+            I deliver transformative AI workshops for organizations that provide five core benefits:
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <h3 className="text-xl font-semibold text-pink-500">Creating "Aha" Moments</h3>
+                <p className="text-slate-600">
+                  I help each team member experience that pivotal moment when they successfully use AI and witness its 
+                  capabilities firsthand, expanding their understanding of what's possible.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <h3 className="text-xl font-semibold text-pink-500">Building Practical Skills</h3>
+                <p className="text-slate-600">
+                  I provide hands-on training in essential AI applications including data analysis, image generation, 
+                  content creation, and knowledge management, giving participants immediately usable tools.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <h3 className="text-xl font-semibold text-pink-500">Optimizing Workflows</h3>
+                <p className="text-slate-600">
+                  I help identify opportunities to enhance existing processes through AI automation and synthesis—eliminating 
+                  redundant meetings, automatically generating reports, and creating new capabilities previously out of reach.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <h3 className="text-xl font-semibold text-pink-500">Establishing Organizational Systems</h3>
+                <p className="text-slate-600">
+                  I implement frameworks that transform individual AI usage into organization-wide adoption, creating 
+                  processes that enable continuous improvement and knowledge sharing.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <h3 className="text-xl font-semibold text-pink-500">Serving as Your AI Navigator</h3>
+                <p className="text-slate-600">
+                  I stay at the forefront of AI developments, testing new technologies and providing ongoing guidance, 
+                  updates, and coaching—saving your team valuable time they can dedicate to their primary responsibilities.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm flex items-center justify-center">
+              <CardContent className="text-center">
+                <p className="text-slate-800 font-medium text-lg">
+                  My workshops bridge the gap between individual AI experimentation and true organizational transformation, 
+                  ensuring your investment in AI technology translates to tangible business results.
+                </p>
+                <Button 
+                  className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 mt-6 rounded-md"
+                  onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+                >
+                  Schedule a Workshop Consultation
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section - Updated with cleaner styling */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto relative">
@@ -313,9 +392,6 @@ const LandingPage = () => {
               <a href="https://saadiq.xyz" className="text-slate-600 hover:text-pink-600">Home</a>
               <a href="#" className="text-slate-600 hover:text-pink-600">AI Coach</a>
             </div>
-          </div>
-          <div className="mt-4 text-center text-sm text-slate-500">
-            <p>Powered by Ghost</p>
           </div>
         </div>
       </footer>
