@@ -25,7 +25,7 @@ const LandingPage = () => {
       <header className="py-24 px-4 text-center bg-slate-50">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold text-slate-900 mb-8">
-            Don&apos;t Let AI Leave You Behind
+            Harness AI to Lead the Future
           </h1>
           <p className="text-2xl text-slate-700 mb-12 leading-relaxed">
             Future-Proof Your Career and Company: Master AI and Stay Ahead of the Curve
@@ -43,7 +43,7 @@ const LandingPage = () => {
       <section className="py-20 px-4 bg-slate-800 text-white">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8">
-            Partner with an AI expert who understands your organizational challenges and opportunities.
+            <span className="text-pink-400">For Organizations:</span> Partner with an AI expert who understands your organizational challenges and opportunities.
           </h2>
 
           <p className="text-xl font-medium mb-6">By working together, you will gain:</p>
@@ -72,13 +72,63 @@ const LandingPage = () => {
               className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
               onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
             >
-              Book Your Free Intro Session
+              Schedule a Company Strategy Session
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Stats Section - Updated to a lighter blue */}
+      {/* Common Concerns Section - Updated with cleaner styling */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto relative">
+          <h2 className="text-3xl font-semibold text-center mb-4 text-slate-900">
+            Common Concerns About AI
+          </h2>
+          <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
+            Whether you're a professional or an organization leader, you're not alone in your concerns:
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <ShieldCheck className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Job Security</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Professionals</span>
+                <p className="text-slate-600">
+                  69% of professionals worry about AI replacement. Our coaching helps you become 
+                  irreplaceable by mastering AI as a tool for enhancement, not replacement.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <TrendingUp className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Rapid Change</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Everyone</span>
+                <p className="text-slate-600">
+                  93% of professionals are concerned about keeping pace with AI developments. 
+                  I help you stay current without overwhelming your schedule.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border border-slate-200 shadow-sm">
+              <CardContent className="space-y-4">
+                <Brain className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Skills Gap</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Organizations</span>
+                <p className="text-slate-600">
+                  Only 12% of professionals have significant AI experience. My coaching bridges 
+                  this gap with practical, role-specific guidance for your team.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section - Updated to a lighter blue - MOVED HERE FROM ABOVE */}
       <section className="py-16 px-4 bg-pink-500 text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-12">
@@ -102,106 +152,11 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Common Concerns Section - Updated with cleaner styling */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-slate-900">
-            You&apos;re Not Alone in Your Concerns
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <ShieldCheck className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Job Security</h3>
-                <p className="text-slate-600">
-                  69% of professionals worry about AI replacement. Our coaching helps you become 
-                  irreplaceable by mastering AI as a tool for enhancement, not replacement.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <TrendingUp className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Rapid Change</h3>
-                <p className="text-slate-600">
-                  93% of professionals are concerned about keeping pace with AI developments. 
-                  We help you stay current without overwhelming your schedule.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <Brain className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Skills Gap</h3>
-                <p className="text-slate-600">
-                  Only 12% of professionals have significant AI experience. Our coaching bridges 
-                  this gap with practical, role-specific guidance.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* AI Advantage Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-slate-900">
-            The AI Advantage
-          </h2>
-          
-          <div className="grid md:grid-cols-4 gap-8">
-            <Card className="p-6">
-              <CardContent className="space-y-4">
-                <Brain className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Enhanced Decision-Making</h3>
-                <p className="text-slate-600">
-                  Access powerful insights and tools that boost your confidence and competence in key decisions.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6">
-              <CardContent className="space-y-4">
-                <Rocket className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Greater Autonomy</h3>
-                <p className="text-slate-600">
-                  Gain independence through AI-powered tools that help you learn and improve continuously.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6">
-              <CardContent className="space-y-4">
-                <Users className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Stronger Relationships</h3>
-                <p className="text-slate-600">
-                  Focus on meaningful interactions while AI handles routine tasks.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6">
-              <CardContent className="space-y-4">
-                <Clock3 className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Time Freedom</h3>
-                <p className="text-slate-600">
-                  Reclaim your time for high-value work and personal development.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* AI Bootcamps Value Proposition Section */}
       <section className="py-16 px-4 bg-slate-100">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-6 text-slate-900">
-            The Value of My Company Workshops
+            <span className="text-pink-500">For Organizations:</span> The Value of My Company Workshops
           </h2>
           <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
             I deliver transformative AI workshops for organizations that provide five core benefits:
@@ -276,6 +231,60 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* AI Advantage Section - UPDATED TO FOCUS ON PERSONAL BENEFITS */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-semibold text-center mb-6 text-slate-900">
+            <span className="text-pink-500">For Professionals:</span> Personal AI Advantage
+          </h2>
+          <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
+            While organizations benefit from systematic AI adoption, individuals gain powerful personal advantages:
+          </p>
+          
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="p-6">
+              <CardContent className="space-y-4">
+                <Brain className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Enhanced Decision-Making</h3>
+                <p className="text-slate-600">
+                  Access powerful insights and tools that boost your confidence and competence in key decisions.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6">
+              <CardContent className="space-y-4">
+                <Rocket className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Greater Autonomy</h3>
+                <p className="text-slate-600">
+                  Gain independence through AI-powered tools that help you learn and improve continuously.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6">
+              <CardContent className="space-y-4">
+                <Users className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Stronger Relationships</h3>
+                <p className="text-slate-600">
+                  Focus on meaningful interactions while AI handles routine tasks.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6">
+              <CardContent className="space-y-4">
+                <Clock3 className="h-12 w-12 text-pink-500 mb-4" />
+                <h3 className="text-xl font-semibold">Time Freedom</h3>
+                <p className="text-slate-600">
+                  Reclaim 5+ hours weekly as AI automates research, content creation, and administrative tasks.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section - Updated with cleaner styling */}
       <section className="py-16 px-4 bg-slate-50">
         <div className="max-w-6xl mx-auto relative">
@@ -287,6 +296,7 @@ const LandingPage = () => {
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
                 <h3 className="text-xl font-semibold">Hourly Coaching</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Individuals</span>
                 <p className="text-slate-600 mb-4">
                   Flexible, one-on-one sessions tailored to your immediate needs and questions.
                 </p>
@@ -300,13 +310,14 @@ const LandingPage = () => {
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
                 onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
-                Book Your Free Intro Session
+                Book Coaching Intro
               </Button>
             </Card>
 
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
                 <h3 className="text-xl font-semibold">Workshops</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Teams</span>
                 <p className="text-slate-600 mb-4">
                   Intensive learning experiences available in half-day, full-day, or multi-week formats.
                 </p>
@@ -320,13 +331,14 @@ const LandingPage = () => {
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
                 onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
-                Book Your Free Intro Session
+                Inquire About Workshops
               </Button>
             </Card>
 
             <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
               <CardContent className="space-y-4 flex-1">
                 <h3 className="text-xl font-semibold">Ongoing Retainer</h3>
+                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">For Organizations</span>
                 <p className="text-slate-600 mb-4">
                   Comprehensive support package for continuous AI growth and implementation.
                 </p>
@@ -341,23 +353,24 @@ const LandingPage = () => {
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
                 onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
               >
-                Book Your Free Intro Session
+                Discuss Retainer Options
               </Button>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Mental Health & Success Stories */}
+      {/* Mental Health & Success Stories - UPDATED TO FOCUS ON POSITIVE OUTCOMES */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-6 text-slate-900">
-            Transform Anxiety into Achievement
+            Transform Potential into Results
           </h2>
           <p className="text-xl text-slate-600 mb-8">
-            51% of workers worried about AI report negative impacts on their mental health. 
-            Our coaching doesn&apos;t just build skills - it builds confidence and peace of mind 
-            in the AI era. Join professionals who have transformed their careers by embracing AI.
+            Forward-thinking organizations are realizing significant returns by strategically implementing AI. 
+            Meanwhile, professionals who master these tools are finding themselves more productive, more valuable to employers, 
+            and better positioned for advancement. Join the leaders who are turning AI capabilities 
+            into competitive advantage and career growth.
           </p>
         </div>
       </section>
@@ -376,7 +389,7 @@ const LandingPage = () => {
             className="bg-slate-800 text-white hover:bg-slate-700 px-8 py-6 text-lg rounded-md"
             onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
           >
-            Book Your Free Intro Session
+            Start Your AI Journey Today
           </Button>
         </div>
       </section>
