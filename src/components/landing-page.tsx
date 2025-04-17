@@ -6,10 +6,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ShieldCheck, TrendingUp, Brain, Users, Rocket, Clock3, ArrowRight } from 'lucide-react';
 
 // Add this TypeScript declaration to fix linter errors for window.gtag
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
