@@ -5,6 +5,14 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShieldCheck, TrendingUp, Brain, Users, Rocket, Clock3, ArrowRight } from 'lucide-react';
 
+// Add this TypeScript declaration to fix linter errors for window.gtag
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-white">
@@ -32,7 +40,12 @@ const LandingPage = () => {
           </p>
           <Button 
             className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
-            onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+                window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+              }
+              window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+            }}
           >
             Book Your Free Intro Session
           </Button>
@@ -70,7 +83,12 @@ const LandingPage = () => {
           <div className="text-center">
             <Button 
               className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
-              onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+                }
+                window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+              }}
             >
               Schedule a Company Strategy Session
             </Button>
@@ -221,7 +239,12 @@ const LandingPage = () => {
                 </p>
                 <Button 
                   className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 mt-6 rounded-md"
-                  onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.gtag) {
+                      window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+                    }
+                    window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+                  }}
                 >
                   Schedule a Workshop Consultation
                 </Button>
@@ -308,7 +331,12 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
-                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+                  }
+                  window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+                }}
               >
                 Book Coaching Intro
               </Button>
@@ -329,7 +357,12 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
-                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+                  }
+                  window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+                }}
               >
                 Inquire About Workshops
               </Button>
@@ -351,7 +384,12 @@ const LandingPage = () => {
               </CardContent>
               <Button 
                 className="w-full bg-pink-500 hover:bg-pink-600 mt-6 rounded-md"
-                onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && window.gtag) {
+                    window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+                  }
+                  window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+                }}
               >
                 Discuss Retainer Options
               </Button>
@@ -387,7 +425,12 @@ const LandingPage = () => {
           </p>
           <Button 
             className="bg-slate-800 text-white hover:bg-slate-700 px-8 py-6 text-lg rounded-md"
-            onClick={() => window.open('https://cal.com/saadiq/free-ai-consultation', '_blank')}
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+                window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+              }
+              window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+            }}
           >
             Start Your AI Journey Today
           </Button>
