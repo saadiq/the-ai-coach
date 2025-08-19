@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Saadiq: AI Coaching",
-  description: "Transform your career with AI coaching",
+  title: "AI Transformation Consulting: Strategy & Execution | Saadiq",
+  description: "Strategic AI implementation that delivers measurable business impact. From automation to AI-native positioning.",
 };
 
 export default function RootLayout({
