@@ -16,14 +16,14 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar - Updated to match screenshot styling without sign in/subscribe */}
-      <nav className="bg-white py-4 px-6 border-b border-slate-200">
+      <nav className="bg-white py-5 px-6 border-b border-slate-200">
         <div className="max-w-6xl mx-auto flex items-center">
-          <a href="https://saadiq.xyz" className="text-xl font-bold text-slate-900 mr-8">Progress Over Perfection</a>
+          <a href="https://saadiq.xyz" className="text-2xl font-bold text-slate-900 mr-12">Progress Over Perfection</a>
           
-          <div className="flex items-center space-x-6">
-            <a href="https://saadiq.xyz" className="text-sm font-medium text-slate-700 hover:text-slate-900">Home</a>
-            <a href="https://saadiq.xyz/about/" className="text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
-            <a href="#" className="text-sm font-medium text-[#FF1A75] hover:text-[#E5156A]">AI Transformation</a>
+          <div className="flex items-center space-x-8">
+            <a href="https://saadiq.xyz" className="text-sm font-normal uppercase tracking-wide text-slate-600 hover:text-slate-900 transition-colors">Home</a>
+            <a href="https://saadiq.xyz/about/" className="text-sm font-normal uppercase tracking-wide text-slate-600 hover:text-slate-900 transition-colors">About</a>
+            <a href="#" className="text-sm font-normal uppercase tracking-wide text-[#FF1A75] hover:text-[#E5156A] transition-colors">AI Transformation</a>
           </div>
         </div>
       </nav>
