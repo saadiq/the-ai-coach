@@ -18,12 +18,12 @@ const LandingPage = () => {
       {/* Navigation Bar - Updated to match screenshot styling without sign in/subscribe */}
       <nav className="bg-white py-4 px-6 border-b border-slate-200">
         <div className="max-w-6xl mx-auto flex items-center">
-          <a href="https://saadiq.xyz" className="text-xl font-bold text-slate-900 mr-8">Saadiq: Progress Over Perfection</a>
+          <a href="https://saadiq.xyz" className="text-xl font-bold text-slate-900 mr-8">Progress Over Perfection</a>
           
           <div className="flex items-center space-x-6">
-            <a href="https://saadiq.xyz" className="uppercase text-sm font-medium text-slate-700 hover:text-slate-900">Home</a>
-            <a href="https://saadiq.xyz/about/" className="uppercase text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
-            <a href="#" className="uppercase text-sm font-medium text-pink-500 hover:text-pink-600">AI Transformation</a>
+            <a href="https://saadiq.xyz" className="text-sm font-medium text-slate-700 hover:text-slate-900">Home</a>
+            <a href="https://saadiq.xyz/about/" className="text-sm font-medium text-slate-700 hover:text-slate-900">About</a>
+            <a href="#" className="text-sm font-medium text-[#FF1A75] hover:text-[#E5156A]">AI Transformation</a>
           </div>
         </div>
       </nav>
@@ -40,7 +40,7 @@ const LandingPage = () => {
             I help organizations implement AI that creates measurable impact.
           </p>
           <Button 
-            className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
+            className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
             onClick={() => {
               if (typeof window !== 'undefined' && window.gtag) {
                 window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
@@ -64,19 +64,19 @@ const LandingPage = () => {
           
           <ul className="space-y-4 text-lg mb-10">
             <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
               <span>Process automation that eliminates hours of manual work daily</span>
             </li>
             <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
               <span>Rapid prototyping capabilities - validate ideas in hours, not weeks</span>
             </li>
             <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
               <span>AI visibility optimization to capture emerging market opportunities</span>
             </li>
             <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-pink-400" />
+              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
               <span>90-day roadmaps with clear milestones and ROI targets</span>
             </li>
           </ul>
@@ -87,7 +87,7 @@ const LandingPage = () => {
 
           <div className="text-center">
             <Button 
-              className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
+              className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
                   window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
@@ -114,7 +114,7 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 border border-slate-200 shadow-sm">
               <CardContent className="space-y-4">
-                <Clock3 className="h-12 w-12 text-pink-500 mb-4" />
+                <Clock3 className="h-12 w-12 text-[#FF1A75] mb-4" />
                 <h3 className="text-xl font-semibold">Enterprise Automation</h3>
                 <p className="text-slate-600">
                   Replaced 40-minute manual property searches with intelligent voice agents and automated email triage for a B2B platform.
@@ -124,7 +124,7 @@ const LandingPage = () => {
 
             <Card className="p-6 border border-slate-200 shadow-sm">
               <CardContent className="space-y-4">
-                <Rocket className="h-12 w-12 text-pink-500 mb-4" />
+                <Rocket className="h-12 w-12 text-[#FF1A75] mb-4" />
                 <h3 className="text-xl font-semibold">Development Acceleration</h3>
                 <p className="text-slate-600">
                   Enabled a sports tech startup to create functional prototypes in 3 hours versus previous multi-week cycles.
@@ -134,7 +134,7 @@ const LandingPage = () => {
 
             <Card className="p-6 border border-slate-200 shadow-sm">
               <CardContent className="space-y-4">
-                <TrendingUp className="h-12 w-12 text-pink-500 mb-4" />
+                <TrendingUp className="h-12 w-12 text-[#FF1A75] mb-4" />
                 <h3 className="text-xl font-semibold">AI-Native Strategy</h3>
                 <p className="text-slate-600">
                   Advised technology companies on positioning for an AI-first future - from optimizing for LLM discovery to reimagining developer experiences in the age of AI agents.
@@ -146,7 +146,7 @@ const LandingPage = () => {
       </section>
 
       {/* Stats Section - Updated to a lighter blue - MOVED HERE FROM ABOVE */}
-      <section className="py-16 px-4 bg-pink-500 text-white">
+      <section className="py-16 px-4 bg-[#FF1A75] text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-semibold text-center mb-12">
             The AI Transformation Opportunity
@@ -230,7 +230,7 @@ const LandingPage = () => {
           
           <div className="text-center mt-12">
             <Button 
-              className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg rounded-md"
+              className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
               onClick={() => {
                 if (typeof window !== 'undefined' && window.gtag) {
                   window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
@@ -277,7 +277,7 @@ const LandingPage = () => {
       </section>
 
       {/* CTA Section - Updated to match blog&apos;s blue */}
-      <section className="py-16 px-4 bg-pink-500 text-white">
+      <section className="py-16 px-4 bg-[#FF1A75] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-6">
             Ready to Transform?
@@ -308,8 +308,8 @@ const LandingPage = () => {
               <p className="font-bold">Saadiq: Progress Over Perfection © 2025</p>
             </div>
             <div className="flex space-x-4">
-              <a href="https://saadiq.xyz" className="text-slate-600 hover:text-pink-600">Home</a>
-              <a href="#" className="text-slate-600 hover:text-pink-600">AI Transformation</a>
+              <a href="https://saadiq.xyz" className="text-slate-600 hover:text-[#FF1A75]">Home</a>
+              <a href="#" className="text-slate-600 hover:text-[#FF1A75]">AI Transformation</a>
             </div>
           </div>
         </div>
