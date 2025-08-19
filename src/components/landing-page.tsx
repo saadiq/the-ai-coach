@@ -36,6 +36,7 @@ const LandingPage = () => {
           </h1>
           <p className="text-2xl text-slate-700 mb-12 leading-relaxed">
             From 40-minute manual processes to instant automation. From weeks of development to 3-hour prototypes. 
+            From traditional tech stacks to AI-native strategic positioning.
             I help organizations implement AI that creates measurable impact.
           </p>
           <Button 
@@ -134,9 +135,9 @@ const LandingPage = () => {
             <Card className="p-6 border border-slate-200 shadow-sm">
               <CardContent className="space-y-4">
                 <TrendingUp className="h-12 w-12 text-pink-500 mb-4" />
-                <h3 className="text-xl font-semibold">Market Repositioning</h3>
+                <h3 className="text-xl font-semibold">AI-Native Strategy</h3>
                 <p className="text-slate-600">
-                  Identified strategic positioning opportunities in emerging AI infrastructure markets through visibility optimization.
+                  Advised technology companies on positioning for an AI-first future - from optimizing for LLM discovery to reimagining developer experiences in the age of AI agents.
                 </p>
               </CardContent>
             </Card>
