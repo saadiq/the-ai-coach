@@ -3,7 +3,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ShieldCheck, TrendingUp, Brain, Users, Rocket, Clock3, ArrowRight } from 'lucide-react';
+import { TrendingUp, Rocket, Clock3, ArrowRight } from 'lucide-react';
 
 // Add this TypeScript declaration to fix linter errors for window.gtag
 declare global {
@@ -268,8 +268,8 @@ const LandingPage = () => {
           </h2>
           <p className="text-xl text-slate-600 mb-8">
             Organizations implementing strategic AI are seeing 10x returns within 12 months. 
-            Those hesitating are falling behind daily. The difference isn't access to technology - 
-            it's having the right approach to implementation. I help you bridge that gap with 
+            Those hesitating are falling behind daily. The difference isn&apos;t access to technology - 
+            it&apos;s having the right approach to implementation. I help you bridge that gap with 
             practical, measurable transformation that delivers results.
           </p>
         </div>
@@ -282,8 +282,8 @@ const LandingPage = () => {
             Ready to Transform?
           </h2>
           <p className="text-xl mb-8">
-            Let's discuss your AI transformation opportunity. Book a strategic consultation 
-            to explore what's possible for your organization.
+            Let&apos;s discuss your AI transformation opportunity. Book a strategic consultation 
+            to explore what&apos;s possible for your organization.
           </p>
           <Button 
             className="bg-slate-800 text-white hover:bg-slate-700 px-8 py-6 text-lg rounded-md"
