@@ -1,0 +1,41 @@
+---
+const stats = [
+  {
+    value: '10x',
+    label: 'Typical ROI within 12 months of strategic AI implementation',
+    accent: true,
+  },
+  {
+    value: '90 days',
+    label: 'From audit to production deployment with clear milestones',
+    accent: false,
+  },
+  {
+    value: '93%',
+    label: 'Reduction in prototype development time using AI-native tools',
+    accent: true,
+  },
+];
+---
+
+<section class="py-20 md:py-28 bg-ink">
+  <div class="swiss-container">
+    <div class="swiss-grid">
+      {
+        stats.map((stat) => (
+          <div class="col-span-12 md:col-span-4 text-center md:text-left mb-12 md:mb-0">
+            <p
+              class={`text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-4 ${stat.accent ? 'text-accent' : 'text-white'}`}
+            >
+              {stat.value}
+            </p>
+            <div class="w-12 h-px bg-white/30 mb-4 mx-auto md:mx-0" />
+            <p class="text-sm md:text-base text-white/70 leading-relaxed">
+              {stat.label}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
