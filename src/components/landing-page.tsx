@@ -67,7 +67,6 @@ const LandingPage = () => {
               <p className="type-body-lg text-muted-text mb-8">
                 From 40-minute manual processes to instant automation. From weeks of development
                 to 3-hour prototypes. From traditional tech stacks to AI-native strategic positioning.
-                I help organizations implement AI that creates measurable impact.
               </p>
               <Button
                 variant="swiss"
