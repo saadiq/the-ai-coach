@@ -10,7 +10,17 @@ export default {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			sans: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
+  		},
   		colors: {
+  			ink: '#0A0A0A',
+  			paper: '#FAFAFA',
+  			accent: {
+  				DEFAULT: '#FF1A75',
+  				hover: '#E5156A',
+  			},
+  			'muted-text': '#6B6B6B',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -33,10 +43,6 @@ export default {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
   			},
-  			accent: {
-  				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
-  			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
@@ -51,6 +57,19 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
+  		},
+  		letterSpacing: {
+  			tighter: '-0.04em',
+  			tight: '-0.03em',
+  			normal: '0',
+  			wide: '0.1em',
+  		},
+  		lineHeight: {
+  			tightest: '0.95',
+  			tight: '1.05',
+  		},
+  		transitionTimingFunction: {
+  			swiss: 'cubic-bezier(0.16, 1, 0.3, 1)',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
