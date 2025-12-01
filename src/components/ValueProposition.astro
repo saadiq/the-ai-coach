@@ -1,0 +1,54 @@
+---
+const valueItems = [
+  {
+    num: '01',
+    title: 'Process Automation',
+    desc: 'Eliminates hours of manual work daily through intelligent agents and automated workflows.',
+  },
+  {
+    num: '02',
+    title: 'Rapid Prototyping',
+    desc: 'Validate ideas in hours, not weeks. Transform development cycles with AI-native tools.',
+  },
+  {
+    num: '03',
+    title: 'AI Visibility',
+    desc: 'Optimize for emerging market opportunities. Position your business for LLM discovery.',
+  },
+  {
+    num: '04',
+    title: 'Clear Roadmaps',
+    desc: '90-day implementation plans with defined milestones and measurable ROI targets.',
+  },
+];
+---
+
+<section class="py-20 md:py-28 bg-white">
+  <div class="swiss-container">
+    <h2 class="type-section text-ink mb-16">
+      Strategic AI<br />Implementation
+    </h2>
+
+    <div class="space-y-0">
+      {
+        valueItems.map((item) => (
+          <div class="border-t border-[#E5E5E5] py-8 md:py-10">
+            <div class="swiss-grid items-start">
+              <div class="col-span-2 md:col-span-1">
+                <span class="text-4xl md:text-5xl font-bold text-accent leading-none">
+                  {item.num}
+                </span>
+              </div>
+              <div class="col-span-10 md:col-span-11">
+                <h3 class="type-subsection text-ink mb-2">{item.title}</h3>
+                <p class="type-body-lg text-muted-text max-w-2xl">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

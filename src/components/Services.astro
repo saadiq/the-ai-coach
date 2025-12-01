@@ -1,0 +1,59 @@
+---
+import Button from './Button.astro';
+
+const services = [
+  {
+    num: '01',
+    title: 'Discovery Engagement',
+    duration: '2 Weeks',
+    desc: 'Comprehensive audit to identify transformation opportunities. AI visibility analysis, process mapping, opportunity identification, and strategic roadmap.',
+  },
+  {
+    num: '02',
+    title: '90-Day Transformation',
+    duration: 'Implementation',
+    desc: 'From audit to production with clear milestones and ROI targets. Rapid prototyping, process automation, team enablement, and measurable outcomes.',
+  },
+  {
+    num: '03',
+    title: 'Strategic Advisory',
+    duration: 'Ongoing',
+    desc: 'Continuous optimization and scaling of AI capabilities. Quarterly reviews, emerging tech guidance, scaling strategies, and ROI optimization.',
+  },
+];
+---
+
+<section class="py-20 md:py-28 bg-white">
+  <div class="swiss-container">
+    <h2 class="type-section text-ink mb-16">How I Work</h2>
+
+    <div class="space-y-0">
+      {
+        services.map((item) => (
+          <div class="border-t border-[#E5E5E5] py-8 md:py-10">
+            <div class="swiss-grid items-start">
+              <div class="col-span-2 md:col-span-1">
+                <span class="text-4xl md:text-5xl font-bold text-accent leading-none">
+                  {item.num}
+                </span>
+              </div>
+              <div class="col-span-10 md:col-span-4">
+                <h3 class="type-subsection text-ink mb-1">{item.title}</h3>
+                <p class="type-label text-muted-text">{item.duration}</p>
+              </div>
+              <div class="col-span-10 col-start-3 md:col-span-6 md:col-start-auto mt-4 md:mt-0">
+                <p class="type-body-lg text-muted-text">{item.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-16">
+      <Button variant="swiss" size="swiss" trackConversion>
+        Book Strategic Consultation
+      </Button>
+    </div>
+  </div>
+</section>
