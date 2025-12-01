@@ -1,39 +1,25 @@
 {
   "name": "the-ai-coach",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.4",
-    "@vercel/speed-insights": "^1.2.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.475.0",
-    "next": "^16.0.6",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "shadcn-ui": "^0.9.5",
-    "tailwind-merge": "^3.4.0",
+    "@astrojs/tailwind": "^6.0.2",
+    "@fontsource/outfit": "^5.1.1",
+    "astro": "^5.8.1",
+    "tailwindcss": "^3.4.18",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
     "@types/node": "^20.19.25",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.1",
-    "babel-plugin-react-compiler": "latest",
-    "eslint-config-next": "^16.0.6",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.18",
-    "typescript": "^5.9.3"
-  },
-  "trustedDependencies": [
-    "@vercel/speed-insights"
-  ]
+    "typescript": "^5.9.3",
+    "wrangler": "^4.19.1"
+  }
 }
