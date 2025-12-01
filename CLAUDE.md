@@ -8,42 +8,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Development server
 bun dev
 
-# Production build
+# Production build (generates static output to dist/)
 bun run build
 
-# Start production server
-bun run start
-
-# Run linting
-bun run lint
+# Preview production build locally
+bun run preview
 ```
 
 ## Project Architecture
 
-This is a Next.js 15 application with the App Router, built for an AI coaching and transformation consulting landing page.
+This is an Astro static site for an AI coaching and transformation consulting landing page, deployed to Cloudflare Pages.
 
 ### Tech Stack
-- **Framework**: Next.js 15 with App Router
-- **Package Manager**: Bun (preferred over npm)
-- **Styling**: Tailwind CSS with tailwindcss-animate
-- **UI Components**: shadcn/ui components (Button, Card)
-- **Icons**: lucide-react
+- **Framework**: Astro 5 (static output mode)
+- **Package Manager**: Bun
+- **Styling**: Tailwind CSS with CSS custom properties for theming
+- **Font**: Outfit (via @fontsource)
+- **Deployment**: Cloudflare Pages (wrangler in devDependencies)
 - **Analytics**: Google Analytics (gtag.js) with conversion tracking
-- **Performance**: Vercel Speed Insights
 
-### Key Implementation Details
+### Project Structure
+- `src/pages/` - Astro pages (file-based routing)
+- `src/layouts/` - Base layout with head, analytics, and global scripts
+- `src/components/` - Astro components for page sections
+- `src/styles/globals.css` - Tailwind config with CSS custom properties and utility classes
 
-#### Component Structure
-- Components use client-side rendering (`'use client'`) for interactive features
-- UI components are in `src/components/ui/` following shadcn patterns
-- Main landing page component handles conversion tracking
+### Key Patterns
 
-#### Analytics Integration
-- Google Analytics is configured in `src/app/layout.tsx` using Next.js Script component
-- Conversion events are tracked on CTA button clicks
-- Window.gtag TypeScript declarations are included in components that use analytics
+**Conversion Tracking**: CTA buttons use `data-track-conversion` attribute. Event delegation in `BaseLayout.astro` handles clicks and fires GA events before opening cal.com booking link.
 
-#### Styling Conventions
-- Uses Tailwind CSS utility classes
-- Color scheme: pink-500/600 for CTAs, slate color palette for content
-- Responsive design with max-width containers
+**Typography System**: Custom utility classes (`type-hero`, `type-section`, `type-body-lg`, etc.) defined in globals.css provide consistent typography across components.
+
+**Layout System**: Swiss-inspired grid with `swiss-container` and `swiss-grid` classes for consistent spacing and layout.
+
+**Path Aliases**: `@/*` maps to `./src/*` for imports.
