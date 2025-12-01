@@ -2,241 +2,254 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { TrendingUp, Rocket, Clock3, ArrowRight } from 'lucide-react';
 
-// Add this TypeScript declaration to fix linter errors for window.gtag
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
   }
 }
 
+const trackConversion = () => {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+  }
+  window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+};
+
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation Bar - Updated to match screenshot styling without sign in/subscribe */}
-      <nav className="bg-white py-5 px-6 border-b border-slate-200">
-        <div className="max-w-6xl mx-auto flex items-center">
-          <a href="https://saadiq.xyz" className="text-2xl font-bold text-slate-900 mr-12">Progress Over Perfection</a>
-          
-          <div className="flex items-center space-x-8">
-            <a href="https://saadiq.xyz" className="text-sm font-normal uppercase tracking-wide text-slate-600 hover:text-slate-900 transition-colors">Home</a>
-            <a href="https://saadiq.xyz/about/" className="text-sm font-normal uppercase tracking-wide text-slate-600 hover:text-slate-900 transition-colors">About</a>
-            <a href="#" className="text-sm font-normal uppercase tracking-wide text-[#FF1A75] hover:text-[#E5156A] transition-colors">AI Transformation</a>
+      {/* Navigation */}
+      <nav className="bg-white py-6 border-b border-[#E5E5E5]">
+        <div className="swiss-container flex justify-between items-center">
+          <a
+            href="https://saadiq.xyz"
+            className="text-base md:text-lg font-bold text-ink tracking-tight"
+          >
+            PROGRESS OVER PERFECTION
+          </a>
+
+          <div className="flex items-center gap-6 md:gap-8">
+            <a
+              href="https://saadiq.xyz"
+              className="type-label text-muted-text hover:text-ink transition-colors"
+            >
+              Home
+            </a>
+            <a
+              href="https://saadiq.xyz/about/"
+              className="type-label text-muted-text hover:text-ink transition-colors"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="type-label text-accent"
+            >
+              AI Transformation
+            </a>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section - Updated with a cleaner background */}
-      <header className="py-24 px-4 text-center bg-slate-50">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-slate-900 mb-8">
-            AI Transformation That Delivers Results
-          </h1>
-          <p className="text-2xl text-slate-700 mb-12 leading-relaxed">
-            From 40-minute manual processes to instant automation. From weeks of development to 3-hour prototypes. 
-            From traditional tech stacks to AI-native strategic positioning.
-            I help organizations implement AI that creates measurable impact.
-          </p>
-          <Button 
-            className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
-            onClick={() => {
-              if (typeof window !== 'undefined' && window.gtag) {
-                window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
-              }
-              window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
-            }}
-          >
-            Book Strategic Consultation
-          </Button>
+      {/* Hero Section */}
+      <header className="bg-paper py-24 md:py-32 lg:py-40">
+        <div className="swiss-container">
+          <div className="swiss-grid items-end">
+            <div className="col-span-12 lg:col-span-8 mb-12 lg:mb-0">
+              <h1 className="type-hero text-ink">
+                AI Transformation<br />
+                That Delivers<br />
+                <span className="text-accent">Results.</span>
+              </h1>
+            </div>
+            <div className="col-span-12 lg:col-span-4 lg:pb-4">
+              <p className="type-body-lg text-muted-text mb-8 max-w-md">
+                From 40-minute manual processes to instant automation.
+                From weeks of development to 3-hour prototypes.
+              </p>
+              <Button
+                variant="swiss"
+                size="swiss"
+                onClick={trackConversion}
+              >
+                Book Consultation
+              </Button>
+            </div>
+          </div>
         </div>
       </header>
 
-      {/* Value Proposition Section - Adjusted to a more subtle blue */}
-      <section className="py-20 px-4 bg-slate-800 text-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-semibold mb-8">
-            Strategic AI Implementation for Measurable Business Impact
+      {/* Value Proposition - Numbered List */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="swiss-container">
+          <h2 className="type-section text-ink mb-16">
+            Strategic AI<br />Implementation
           </h2>
 
-          <p className="text-xl font-medium mb-6">My transformation approach delivers:</p>
-          
-          <ul className="space-y-4 text-lg mb-10">
-            <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
-              <span>Process automation that eliminates hours of manual work daily</span>
-            </li>
-            <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
-              <span>Rapid prototyping capabilities - validate ideas in hours, not weeks</span>
-            </li>
-            <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
-              <span>AI visibility optimization to capture emerging market opportunities</span>
-            </li>
-            <li className="flex items-start">
-              <ArrowRight className="h-6 w-6 mr-4 mt-1 flex-shrink-0 text-[#FF1A75]/60" />
-              <span>90-day roadmaps with clear milestones and ROI targets</span>
-            </li>
-          </ul>
-
-          <p className="text-xl leading-relaxed font-medium mb-10">
-            Every engagement starts with data, not assumptions. I audit your current state, identify high-impact opportunities, and implement practical solutions.
-          </p>
-
-          <div className="text-center">
-            <Button 
-              className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
-              onClick={() => {
-                if (typeof window !== 'undefined' && window.gtag) {
-                  window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
-                }
-                window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
-              }}
-            >
-              Book Strategic Consultation
-            </Button>
+          <div className="space-y-0">
+            {[
+              {
+                num: '01',
+                title: 'Process Automation',
+                desc: 'Eliminates hours of manual work daily through intelligent agents and automated workflows.'
+              },
+              {
+                num: '02',
+                title: 'Rapid Prototyping',
+                desc: 'Validate ideas in hours, not weeks. Transform development cycles with AI-native tools.'
+              },
+              {
+                num: '03',
+                title: 'AI Visibility',
+                desc: 'Optimize for emerging market opportunities. Position your business for LLM discovery.'
+              },
+              {
+                num: '04',
+                title: 'Clear Roadmaps',
+                desc: '90-day implementation plans with defined milestones and measurable ROI targets.'
+              }
+            ].map((item) => (
+              <div key={item.num} className="border-t border-[#E5E5E5] py-8 md:py-10">
+                <div className="swiss-grid items-start">
+                  <div className="col-span-2 md:col-span-1">
+                    <span className="text-4xl md:text-5xl font-bold text-accent leading-none">
+                      {item.num}
+                    </span>
+                  </div>
+                  <div className="col-span-10 md:col-span-11">
+                    <h3 className="type-subsection text-ink mb-2">{item.title}</h3>
+                    <p className="type-body-lg text-muted-text max-w-2xl">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Transformation Opportunities Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-3xl font-semibold text-center mb-4 text-slate-900">
-            Recent Transformation Results
-          </h2>
-          <p className="text-xl text-slate-700 text-center mb-12 max-w-4xl mx-auto">
-            Real outcomes from strategic AI implementation:
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <Clock3 className="h-12 w-12 text-[#FF1A75] mb-4" />
-                <h3 className="text-xl font-semibold">Enterprise Automation</h3>
-                <p className="text-slate-600">
-                  Replaced 40-minute manual property searches with intelligent voice agents and automated email triage for a B2B platform.
+      {/* Stats Section - Dark */}
+      <section className="py-20 md:py-28 bg-ink">
+        <div className="swiss-container">
+          <div className="swiss-grid">
+            {[
+              { value: '10x', label: 'Typical ROI within 12 months of strategic AI implementation', accent: true },
+              { value: '90 days', label: 'From audit to production deployment with clear milestones', accent: false },
+              { value: '93%', label: 'Reduction in prototype development time using AI-native tools', accent: true }
+            ].map((stat, i) => (
+              <div key={i} className="col-span-12 md:col-span-4 text-center md:text-left mb-12 md:mb-0">
+                <p className={`text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-4 ${stat.accent ? 'text-accent' : 'text-white'}`}>
+                  {stat.value}
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <Rocket className="h-12 w-12 text-[#FF1A75] mb-4" />
-                <h3 className="text-xl font-semibold">Development Acceleration</h3>
-                <p className="text-slate-600">
-                  Enabled a sports tech startup to create functional prototypes in 3 hours versus previous multi-week cycles.
+                <div className="w-12 h-px bg-white/30 mb-4 mx-auto md:mx-0" />
+                <p className="text-sm md:text-base text-white/70 leading-relaxed">
+                  {stat.label}
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4">
-                <TrendingUp className="h-12 w-12 text-[#FF1A75] mb-4" />
-                <h3 className="text-xl font-semibold">AI-Native Strategy</h3>
-                <p className="text-slate-600">
-                  Advised technology companies on positioning for an AI-first future - from optimizing for LLM discovery to reimagining developer experiences in the age of AI agents.
-                </p>
-              </CardContent>
-            </Card>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Stats Section - Updated to a lighter blue - MOVED HERE FROM ABOVE */}
-      <section className="py-16 px-4 bg-[#FF1A75] text-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-12">
-            The AI Transformation Opportunity
+      {/* Results Section - Asymmetric Blocks */}
+      <section className="py-20 md:py-28 bg-paper">
+        <div className="swiss-container">
+          <h2 className="type-section text-ink mb-16">
+            Recent<br />Transformations
           </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <p className="text-4xl font-bold mb-4">10x</p>
-              <p className="text-lg">Typical ROI within 12 months of strategic AI implementation</p>
+
+          <div className="swiss-grid">
+            {/* First block */}
+            <div className="col-span-12 md:col-span-6 mb-8 md:mb-0">
+              <div className="bg-white p-8 md:p-12 border border-[#E5E5E5]">
+                <p className="type-label text-accent mb-4">Enterprise Automation</p>
+                <h3 className="type-subsection text-ink mb-4">40-Minute to Instant</h3>
+                <p className="type-body-lg text-muted-text">
+                  Replaced manual property searches with intelligent voice agents
+                  and automated email triage for a B2B platform.
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold mb-4">90 days</p>
-              <p className="text-lg">From audit to production deployment with clear milestones</p>
+
+            {/* Second block - offset */}
+            <div className="col-span-12 md:col-span-5 md:col-start-8 md:mt-16">
+              <div className="bg-ink p-8 md:p-12 text-white">
+                <p className="type-label text-accent mb-4">Development Acceleration</p>
+                <h3 className="type-subsection mb-4">Weeks to Hours</h3>
+                <p className="type-body-lg text-white/70">
+                  Enabled a sports tech startup to create functional prototypes
+                  in 3 hours versus previous multi-week cycles.
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold mb-4">93%</p>
-              <p className="text-lg">Reduction in prototype development time using AI-native tools</p>
+
+            {/* Third block */}
+            <div className="col-span-12 md:col-span-6 md:col-start-3 mt-8">
+              <div className="bg-white p-8 md:p-12 border border-[#E5E5E5]">
+                <p className="type-label text-accent mb-4">AI-Native Strategy</p>
+                <h3 className="type-subsection text-ink mb-4">Future-Ready Positioning</h3>
+                <p className="type-body-lg text-muted-text">
+                  Advised technology companies on positioning for an AI-first future —
+                  from LLM discovery optimization to reimagining developer experiences.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-
-
-      {/* Services Section - Updated with actual engagement model */}
-      <section className="py-16 px-4 bg-slate-50">
-        <div className="max-w-6xl mx-auto relative">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-slate-900">
+      {/* Services Section */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="swiss-container">
+          <h2 className="type-section text-ink mb-16">
             How I Work
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">Discovery Engagement</h3>
-                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">2 Weeks</span>
-                <p className="text-slate-600 mb-4">
-                  Comprehensive audit to identify transformation opportunities.
-                </p>
-                <ul className="text-slate-600 space-y-2">
-                  <li>• AI visibility analysis</li>
-                  <li>• Process mapping</li>
-                  <li>• Opportunity identification</li>
-                  <li>• Strategic roadmap</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">90-Day Transformation</h3>
-                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">Implementation</span>
-                <p className="text-slate-600 mb-4">
-                  From audit to production with clear milestones and ROI targets.
-                </p>
-                <ul className="text-slate-600 space-y-2">
-                  <li>• Rapid prototyping</li>
-                  <li>• Process automation</li>
-                  <li>• Team enablement</li>
-                  <li>• Measurable outcomes</li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 flex flex-col border border-slate-200 shadow-sm">
-              <CardContent className="space-y-4 flex-1">
-                <h3 className="text-xl font-semibold">Strategic Advisory</h3>
-                <span className="inline-block py-1 px-2 bg-slate-100 text-slate-700 text-sm rounded mb-2">Ongoing</span>
-                <p className="text-slate-600 mb-4">
-                  Continuous optimization and scaling of AI capabilities.
-                </p>
-                <ul className="text-slate-600 space-y-2">
-                  <li>• Quarterly reviews</li>
-                  <li>• Emerging tech guidance</li>
-                  <li>• Scaling strategies</li>
-                  <li>• ROI optimization</li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="space-y-0">
+            {[
+              {
+                num: '01',
+                title: 'Discovery Engagement',
+                duration: '2 Weeks',
+                desc: 'Comprehensive audit to identify transformation opportunities. AI visibility analysis, process mapping, opportunity identification, and strategic roadmap.'
+              },
+              {
+                num: '02',
+                title: '90-Day Transformation',
+                duration: 'Implementation',
+                desc: 'From audit to production with clear milestones and ROI targets. Rapid prototyping, process automation, team enablement, and measurable outcomes.'
+              },
+              {
+                num: '03',
+                title: 'Strategic Advisory',
+                duration: 'Ongoing',
+                desc: 'Continuous optimization and scaling of AI capabilities. Quarterly reviews, emerging tech guidance, scaling strategies, and ROI optimization.'
+              }
+            ].map((item) => (
+              <div key={item.num} className="border-t border-[#E5E5E5] py-8 md:py-10">
+                <div className="swiss-grid items-start">
+                  <div className="col-span-2 md:col-span-1">
+                    <span className="text-4xl md:text-5xl font-bold text-accent leading-none">
+                      {item.num}
+                    </span>
+                  </div>
+                  <div className="col-span-10 md:col-span-4">
+                    <h3 className="type-subsection text-ink mb-1">{item.title}</h3>
+                    <p className="type-label text-muted-text">{item.duration}</p>
+                  </div>
+                  <div className="col-span-10 col-start-3 md:col-span-6 md:col-start-auto mt-4 md:mt-0">
+                    <p className="type-body-lg text-muted-text">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          
-          <div className="text-center mt-12">
-            <Button 
-              className="bg-[#FF1A75] hover:bg-[#E5156A] text-white px-8 py-6 text-lg rounded-md"
-              onClick={() => {
-                if (typeof window !== 'undefined' && window.gtag) {
-                  window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
-                }
-                window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
-              }}
+
+          <div className="mt-16">
+            <Button
+              variant="swiss"
+              size="swiss"
+              onClick={trackConversion}
             >
               Book Strategic Consultation
             </Button>
@@ -245,71 +258,72 @@ const LandingPage = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4 bg-slate-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-8 text-slate-900">
-            About
-          </h2>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            Saadiq Rodgers-King is an AI Transformation Consultant based in Brooklyn, NY. 
-            With a Computer Science degree from Princeton and MBA from MIT Sloan, he brings 
-            both technical depth and strategic insight to every engagement. After 20+ years 
-            building products across fintech (Fabric, acquired by Gerber Life), Web3 
-            (PROOF Holdings, acquired by Yuga Labs), and enterprise SaaS, Saadiq now focuses 
-            on helping organizations navigate AI transformation with practical, measurable approaches.
-          </p>
+      <section className="py-20 md:py-28 bg-paper">
+        <div className="swiss-container">
+          <div className="swiss-grid">
+            <div className="col-span-12 md:col-span-2">
+              <h2 className="type-label text-muted-text mb-8 md:mb-0">About</h2>
+            </div>
+            <div className="col-span-12 md:col-span-7">
+              <p className="type-body-lg text-ink leading-relaxed">
+                <span className="text-5xl md:text-6xl font-bold text-accent float-left mr-4 leading-none">S</span>
+                aadiq Rodgers-King is an AI Transformation Consultant based in Brooklyn, NY.
+                With a Computer Science degree from Princeton and MBA from MIT Sloan, he brings
+                both technical depth and strategic insight to every engagement.
+              </p>
+              <p className="type-body-lg text-muted-text mt-6">
+                After 20+ years building products across consumer internet (Hot Potato, acquired by Facebook),
+                fintech (Fabric, acquired by Gerber Life), Web3 (PROOF Holdings, acquired by Yuga Labs),
+                and enterprise SaaS, Saadiq now focuses on helping organizations navigate AI transformation
+                with practical, measurable approaches.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Transform Potential Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-6 text-slate-900">
-            The Gap Is Widening
-          </h2>
-          <p className="text-xl text-slate-600 mb-8">
-            Organizations implementing strategic AI are seeing 10x returns within 12 months. 
-            Those hesitating are falling behind daily. The difference isn&apos;t access to technology - 
-            it&apos;s having the right approach to implementation. I help you bridge that gap with 
-            practical, measurable transformation that delivers results.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section - Updated to match blog&apos;s blue */}
-      <section className="py-16 px-4 bg-[#FF1A75] text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-6">
-            Ready to Transform?
-          </h2>
-          <p className="text-xl mb-8">
-            Let&apos;s discuss your AI transformation opportunity. Book a strategic consultation 
-            to explore what&apos;s possible for your organization.
-          </p>
-          <Button 
-            className="bg-slate-800 text-white hover:bg-slate-700 px-8 py-6 text-lg rounded-md"
-            onClick={() => {
-              if (typeof window !== 'undefined' && window.gtag) {
-                window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
-              }
-              window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
-            }}
-          >
-            Book Strategic Consultation
-          </Button>
+      {/* Final CTA Section */}
+      <section className="py-20 md:py-28 bg-ink">
+        <div className="swiss-container">
+          <div className="swiss-grid items-center">
+            <div className="col-span-12 lg:col-span-8 mb-12 lg:mb-0">
+              <h2 className="type-section text-white">
+                The Gap Is<br />
+                <span className="text-accent">Widening.</span>
+              </h2>
+              <p className="type-body-lg text-white/60 mt-6 max-w-xl">
+                Organizations implementing strategic AI are seeing 10x returns within 12 months.
+                Those hesitating are falling behind daily.
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-4">
+              <Button
+                variant="swiss"
+                size="swiss"
+                className="w-full lg:w-auto"
+                onClick={trackConversion}
+              >
+                Book Strategic Consultation
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-white text-slate-600 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <p className="font-bold">Saadiq: Progress Over Perfection © 2025</p>
-            </div>
-            <div className="flex space-x-4">
-              <a href="https://saadiq.xyz" className="text-slate-600 hover:text-[#FF1A75]">Home</a>
-              <a href="#" className="text-slate-600 hover:text-[#FF1A75]">AI Transformation</a>
+      <footer className="py-8 bg-white border-t border-[#E5E5E5]">
+        <div className="swiss-container">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-text">
+              Saadiq: Progress Over Perfection © 2025
+            </p>
+            <div className="flex gap-6">
+              <a href="https://saadiq.xyz" className="type-label text-muted-text hover:text-ink transition-colors">
+                Home
+              </a>
+              <a href="#" className="type-label text-muted-text hover:text-accent transition-colors">
+                AI Transformation
+              </a>
             </div>
           </div>
         </div>
