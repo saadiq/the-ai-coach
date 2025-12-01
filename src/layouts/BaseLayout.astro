@@ -1,0 +1,66 @@
+---
+import '@fontsource/outfit/300.css';
+import '@fontsource/outfit/400.css';
+import '@fontsource/outfit/500.css';
+import '@fontsource/outfit/600.css';
+import '@fontsource/outfit/700.css';
+import '@fontsource/outfit/800.css';
+import '../styles/globals.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'AI Transformation Consulting: Strategy & Execution | Saadiq',
+  description = 'Strategic AI implementation that delivers measurable business impact. From automation to AI-native positioning.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PQMVFLNMB6"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-PQMVFLNMB6');
+    </script>
+
+    <!-- Cloudflare Web Analytics (add token after Cloudflare Pages setup) -->
+    <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_CF_TOKEN"}'></script> -->
+  </head>
+  <body class="font-sans antialiased">
+    <slot />
+
+    <!-- Conversion tracking script -->
+    <script is:inline>
+      function trackConversion() {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', { send_to: 'G-PQMVFLNMB6' });
+        }
+        window.open('https://cal.com/saadiq/free-ai-consultation', '_blank');
+      }
+
+      // Event delegation for conversion tracking buttons
+      document.addEventListener('click', function (e) {
+        if (e.target.closest('[data-track-conversion]')) {
+          trackConversion();
+        }
+      });
+    </script>
+  </body>
+</html>
